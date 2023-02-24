@@ -1,8 +1,9 @@
 ESX = exports["es_extended"]:getSharedObject()
 
-local currentZone, currentData = nil, nil
+local currentZone, currentData ,insidee ,onExitt= nil, nil, nil, nil
 
 lib.locale()
+
 local ox_inventory = exports.ox_inventory
 
 
@@ -68,51 +69,13 @@ end)
  
 
 function inside()
-  
- local options = {} 
- 
-  if inside then   
-     options[#options + 1] = {
-     title = locale('billingget'),
-     description = locale('billinggetplay'), 
-     event = 'esx_burgershot:burgershotbilling', 
-     icon = 'file-lines',
-     }
-    options[#options + 1] = {
-    title = locale('takeout'),
-    description = locale('takeoutcar'),
-    event = 'esx_burgershot:burgergarageSpawnVehicle',
-    icon = 'left-long',
-    }
-    options[#options + 1] = {
-    title = locale('deposit'),
-    description = locale('depositcar'),
-    event = 'esx_burgershot:burgergarageDeleteVehicle', 
-    icon = 'right-long',
-    }
-  end
-    lib.registerContext({
-      id = 'burgershotbilling',
-      title = locale('billing'),
-      options = options,
-    })
-end
+  insidee = true
+  if IsControlJustReleased(0, 167) and    insidee  and ESX.PlayerData.job and ESX.PlayerData.job.name == 'burgershot' then  
+    lib.showContext('burgershotbillingone')
+  end 
 
 function onExit() 
-  local options = {} 
-  if onExit then  
-    options[#options + 1] = {
-      title = locale('billingget'),
-      description = locale('billinggetplay'), 
-      event = 'esx_burgershot:burgershotbilling', 
-      icon = 'file-lines',
-      }
-  end
-  lib.registerContext({
-    id = 'burgershotbilling',
-    title = locale('billing'),
-    options = options,
-})
+  insidee = false
 end
 local box = lib.zones.box({
   coords = vec3(-1172.4801, -883.7699, 14.02080),
@@ -126,12 +89,63 @@ local box = lib.zones.box({
 Citizen.CreateThread(function()
   while true do
     local sleep = 0
-    if IsControlJustReleased(0, 167) and ESX.PlayerData.job and ESX.PlayerData.job.name == 'burgershot' then
-       lib.showContext('burgershotbilling') 
-     end
+    if IsControlJustReleased(0, 167) and  not insidee  and ESX.PlayerData.job and ESX.PlayerData.job.name == 'burgershot' then  
+      lib.showContext('burgershotbillingtwo')
+    end  
     Citizen.Wait(sleep)
   end      
-end)   
+end) 
+  
+lib.registerContext({
+  id = 'burgershotbillingone',
+  title = locale('billingget'),
+ 
+  options = {
+ 
+      {
+        title = locale('billingget'),
+        description = locale('billinggetplay'), 
+        event = 'esx_burgershot:burgershotbilling', 
+        icon = 'file-lines',
+        
+      },
+      {
+        title = locale('takeout'),
+        description = locale('takeoutcar'),
+        event = 'esx_burgershot:burgergarageSpawnVehicle',
+        icon = 'left-long',
+        
+      },
+      {
+        title = locale('deposit'),
+        description = locale('depositcar'),
+        event = 'esx_burgershot:burgergarageDeleteVehicle', 
+        icon = 'right-long',
+        
+      },
+    
+  },
+ 
+})
+ 
+
+lib.registerContext({
+  id = 'burgershotbillingtwo',
+  title = locale('billingget'),
+ 
+  options = {
+ 
+      {
+        title = locale('billingget'),
+        description = locale('billinggetplay'), 
+        event = 'esx_burgershot:burgershotbilling', 
+        icon = 'file-lines',
+      },
+    
+  },
+ 
+})
+
  
 
 RegisterNetEvent('esx_burgershot:burgershotbilling')
@@ -909,42 +923,3 @@ local input = lib.inputDialog(locale('buypotato'), {{ type = "number", label = l
 end) 
  
  
- 
- 
---[[function openMenu()
- 
-  local options = {}
-  local vbread = exports.ox_inventory:Search('count', 'vbread')
-
-     if vbread == 1 then
-      if vbread == 1 then
-          options[#options + 1] = {
-              title = 'options+1',
-              description = 'options+1',
- 
-              
-          }
-      else 
-          options[#options + 1] = {
-            title = 'options+2',
-            description = 'options+2',
-   
-               
-          }
-      end
-  end
-
-
-  lib.registerContext({
-      id = "test",
-      title = 'test',
-      options = options,
-  
-  })
-
-  lib.showContext("test")
-
-end
-RegisterCommand('ddddd', function()
-  openMenu()
-end)]]
