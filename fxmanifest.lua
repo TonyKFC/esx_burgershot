@@ -5,7 +5,7 @@ lua54 'yes'
  
 description 'ESX Burger Shot 2023 by:TonyKFC'
 
-version '1.0.0'
+version '1.1.0'
 
 client_scripts {
   '@es_extended/locale.lua', 
