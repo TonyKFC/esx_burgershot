@@ -96,13 +96,9 @@ Config.burgershot = {
                 coords = vec3(-1202.3115, -896.9929, 13.9953),
                 range = 1.0
             },
-            burgerfoodmenuLoc = { 
-                coords = vec3(-1194.0216, -892.8758, 13.9953),
-                range = 1.0
-            },
             burgerdeskLoc = { 
-                coords = vec3(-1195.3750, -890.9067, 13.9953),
-                range = 1.0
+                coords = vec3(-1196.2001, -891.4355, 15.1010),
+                range = 1.8  
             }, 
             burgerfoodshotLoc = { 
                 coords = vec3(-1659.5527, -1044.4146, 13.1653),
