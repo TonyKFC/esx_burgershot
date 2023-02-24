@@ -1,0 +1,127 @@
+{   
+
+	"burgergarageblipsname": "Burger shop",
+    
+	"burgershotbilling": "burger shop bill",
+	"burgershotingredients": "Burger Ingredients Store",
+	"billing": "bill",
+	"billingget": "bill",
+	"billinggetplay": "Billing Attachment Players!",
+	"Confirm": "confirm",
+	"Amount": "quantity",
+	"Amounttobill": "bill amount",
+	"no_players_nearby": "no players nearby",
+	"amount_invalid": "Invalid number entered",
+	"billing_sent": "bill sent",
+
+	"open_fridge": "[E] - open the refrigerator",
+	"open_changingroom": "[E] - open the closet",
+	"open_burgergarage": "[E] - open the garage",
+	"open_boss": "[E] - Open the Boss menu",
+
+	"burgergarage": "burger shop garage",
+	"takeout": "take out",
+	"takeoutcar": "take out the vehicle",
+	"deposit": "deposit",
+	"depositcar": "deposit vehicle",
+	"errorgarage": "garage",
+	"errorgaragetext": "You can only park work vehicles",
+	"keygaragetext": "The car key has been obtained, press [U] to lock the car",
+	
+	"open_burgercooking": "[E] - cooking food",
+	"burgercooking": "kitchen",
+	"burgercookingroomm": "make food",
+	"burgercookingroommcr": "menu for making food",
+	"makingburgers": "burger",
+	"makingburgerss": "making burgers",
+	
+	"makingnugget": "chicken nuggets",
+	"makingnuggets": "making chicken nuggets",
+	"nuggets10": "frozen chicken nuggets",
+
+	"makingcheese": "fries",
+	"makingcheeses": "making french fries",
+	"potato": "Potato",
+
+	
+	"makingcolala": "Cola",
+	"makingcolalas": "making cola",
+	"icee": "ice cubes",
+
+	
+	"open_burgerfoodmenu": "[E] - burger menu",
+	"burgerfoodmenu": "     burger menu    ",
+	
+	"fvburger": "beef burger",
+	"nugget": "nuggets",
+	"cheese": "fries",
+	"colala": "Cola",
+	"exit": "leave", 
+	"fvburgersellmoney": "20$",
+	"nuggetsellmoney": "10$",
+	"cheesesellmoney": "5$",
+	"colalasellmoney": "5$",
+ 
+	"cookinging": "making",
+	
+	"vbread": "burger buns",
+	"ccheese": "cheese slices", 
+	"fburger": "frozen beef patties",
+	"lettuce": "lettuce",
+	"ctomato": "tomato slices",  
+
+	"kitchen": "kitchen",
+	"missingfood": "You are missing an ingredient from the ingredient list", 
+	"errorkitchen": "An unknown error has occurred", 
+
+   
+	"open_dinnerplate": "[E] - take meal",
+	"takemeal": "take meal",
+	"takemealnumber": "Pickup number",
+	"wrongnumber": "pick up number",
+	"wrongnumberr": "Incorrect order number, please enter1-5",
+
+	
+	"burgershotFridge": "fridge",
+	"dinnerplate1": "take meal-1",
+	"dinnerplate2": "take meal-2",
+	"dinnerplate3": "take meal-3",
+	"dinnerplate4": "take meal-4",
+	"dinnerplate5": "take meal-5",
+
+	"open_burgerfoodshot": "[E] - open shop",
+	"open_burgerfoodshott": "open shop",
+	"buyingredients": "buy ingredients",
+
+	"burgeringredients": "burger ingredients",
+	"ingredientsforhamburger": "Ingredients for making burgers!",
+	"chickennuggets": "chicken nuggets",
+	"IngredientsforChickenNuggets": "Ingredients for Chicken Nuggets!",
+	"friesingredients": "french fries ingredients",
+	"IngredientsforFrenchFries": "Ingredients for French Fries!",
+	"Buythisingredient": "buy this ingredient!",
+	
+	"Invalidamount": "Invalid amount",
+	"validamount": "Please enter a valid amount",
+	
+	"shot": "shop",
+	"enoughcash": "you don't have enough cash",
+
+	
+	"buyvbread": "Buying Burger Buns / 5$",
+	"buyccheese": "buy cheese slices / 5$",
+	"buyfburger": "buy frozen beef patties / 5$",
+	"buylettuce": "buy lettuce / 5$",
+	"buyctomato": "buy tomato slices / 5$",
+	"buynuggets10": "buy frozen chicken nuggets / 5$",
+	"buypotato": "buy potatoes / 5$",
+
+	"burgerchangingroom": "staff wardrobe",
+	"workerroom": "Wardrobe",
+	"workerclothing": "work clothes",
+	"changing": "replace",
+	"casualwear": "casual wear",
+	"changingclothing": "change clothes",
+	"burgerchangingroomm": "Wardrobe"
+	  
+}

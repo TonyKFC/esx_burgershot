@@ -1,0 +1,127 @@
+{   
+
+	"burgergarageblipsname": "汉堡店",
+    
+	"burgershotbilling": "汉堡店账单",
+	"burgershotingredients": "汉堡食材商店",
+	"billing": "账单",
+	"billingget": "开账单",
+	"billinggetplay": "给附件玩家开账单!",
+	"Confirm": "确认",
+	"Amount": "数量",
+	"Amounttobill": "账单金额",
+	"no_players_nearby": "附近没有玩家",
+	"amount_invalid": "输入数字无效",
+	"billing_sent": "账单已寄出",
+
+	"open_fridge": "[E] - 打开冰箱",
+	"open_changingroom": "[E] - 打开衣柜",
+	"open_burgergarage": "[E] - 打开车库",
+	"open_boss": "[E] - 打开Boss菜单",
+
+	"burgergarage": "汉堡店车库",
+	"takeout": "取出",
+	"takeoutcar": "取出车辆",
+	"deposit": "存入",
+	"depositcar": "存入车辆",
+	"errorgarage": "车库",
+	"errorgaragetext": "你只能停工作车辆",
+	"keygaragetext": "已经获取车钥匙,按 [U] 锁定车辆",
+	
+	"open_burgercooking": "[E] - 烹饪食物",
+	"burgercooking": "厨房",
+	"burgercookingroomm": "制作食物",
+	"burgercookingroommcr": "制作食物的菜单",
+	"makingburgers": "汉堡",
+	"makingburgerss": "制作汉堡",
+	
+	"makingnugget": "鸡块",
+	"makingnuggets": "制作鸡块",
+	"nuggets10": "冷冻鸡块",
+
+	"makingcheese": "薯条",
+	"makingcheeses": "制作薯条",
+	"potato": "土豆",
+
+	
+	"makingcolala": "可乐",
+	"makingcolalas": "制作可乐",
+	"icee": "冰块",
+
+	
+	"open_burgerfoodmenu": "[E] - 汉堡菜单",
+	"burgerfoodmenu": "     汉堡菜单    ",
+	
+	"fvburger": "牛肉汉堡",
+	"nugget": "鸡块",
+	"cheese": "薯条",
+	"colala": "可乐",
+	"exit": "离开", 
+	"fvburgersellmoney": "20$",
+	"nuggetsellmoney": "10$",
+	"cheesesellmoney": "5$",
+	"colalasellmoney": "5$",
+ 
+	"cookinging": "制作中",
+	
+	"vbread": "汉堡面包",
+	"ccheese": "芝士片", 
+	"fburger": "冷冻牛肉饼",
+	"lettuce": "生菜",
+	"ctomato": "番茄片",  
+
+	"kitchen": "厨房",
+	"missingfood": "你缺少配料表的食材", 
+	"errorkitchen": "发生了未知的错误", 
+
+   
+	"open_dinnerplate": "[E] - 取餐",
+	"takemeal": "取餐",
+	"takemealnumber": "取餐号码",
+	"wrongnumber": "取餐号码",
+	"wrongnumberr": "取餐号码错误请输入1-5",
+
+	
+	"burgershotFridge": "冰箱",
+	"dinnerplate1": "取餐-1",
+	"dinnerplate2": "取餐-2",
+	"dinnerplate3": "取餐-3",
+	"dinnerplate4": "取餐-4",
+	"dinnerplate5": "取餐-5",
+
+	"open_burgerfoodshot": "[E] - 打开商店",
+	"open_burgerfoodshott": "打开商店",
+	"buyingredients": "购买制作食材",
+
+	"burgeringredients": "汉堡食材",
+	"ingredientsforhamburger": "制作汉堡的食材!",
+	"chickennuggets": "鸡块食材",
+	"IngredientsforChickenNuggets": "制作鸡块的食材!",
+	"friesingredients": "薯条食材",
+	"IngredientsforFrenchFries": "制作薯条的食材!",
+	"Buythisingredient": "购买这个食材!",
+	
+	"Invalidamount": "金额无效",
+	"validamount": "请输入有效金额",
+	
+	"shot": "商店",
+	"enoughcash": "你没有足够的现金",
+
+	
+	"buyvbread": "购买汉堡面包 / 5$",
+	"buyccheese": "购买芝士片 / 5$",
+	"buyfburger": "购买冷冻牛肉饼 / 5$",
+	"buylettuce": "购买生菜 / 5$",
+	"buyctomato": "购买番茄片 / 5$",
+	"buynuggets10": "购买冷冻鸡块 / 5$",
+	"buypotato": "购买土豆 / 5$",
+
+	"burgerchangingroom": "员工衣柜",
+	"workerroom": "衣柜",
+	"workerclothing": "工作装",
+	"changing": "更换",
+	"casualwear": "休闲装",
+	"changingclothing": "换衣服",
+	"burgerchangingroomm": "衣柜"
+	  
+}
