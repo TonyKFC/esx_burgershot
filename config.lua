@@ -32,8 +32,7 @@ Config.MarkerZones = {
 Config.SpawnVehicle ={  
     Spawn =
     {
-        Pos   = { x = -1164.3126, y = -891.8652, z = 14.0976, w = 303.0782},
-        model = "boxville2",
+ 	model = "boxville2",
         Plate = "BURGER",
         PlateColor = 1,
     },
