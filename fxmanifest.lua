@@ -27,11 +27,11 @@ shared_scripts {
 }
 
 dependencies {
-	'es_extended',
-	'esx_billing',
-	'esx_vehicleshop',
-  'ox_inventory',
-  'ox_lib'
+ 'es_extended',
+ 'esx_billing',
+ 'esx_vehicleshop',
+ 'ox_inventory',
+ 'ox_lib'
 }
 
 shared_script '@es_extended/imports.lua'
