@@ -1,7 +1,7 @@
 ESX = exports["es_extended"]:getSharedObject()
 
 local currentZone, currentData ,insidee ,onExitt= nil, nil, nil, nil
-
+blips = {}
 lib.locale()
 
 local ox_inventory = exports.ox_inventory
@@ -52,17 +52,26 @@ CreateThread(function()
   BeginTextCommandSetBlipName('STRING')
   AddTextComponentSubstringPlayerName(locale('burgergarageblipsname'))
   EndTextCommandSetBlipName(Burgerblip)
-
-  local burgeringredients = AddBlipForCoord(Config.blips.burgeringredients.Pos.x, Config.blips.burgeringredients.Pos.y,Config.blips.burgeringredients.Pos.z)
-  SetBlipSprite(burgeringredients, Config.blips.burgeringredients.Sprite)
-  SetBlipDisplay(burgeringredients, Config.blips.burgeringredients.Display)
-  SetBlipScale(burgeringredients, Config.blips.burgeringredients.Scale)
-  SetBlipColour(burgeringredients, Config.blips.burgeringredients.Colour)
-  SetBlipAsShortRange(burgeringredients, true)
-  BeginTextCommandSetBlipName('STRING')
-  AddTextComponentSubstringPlayerName(locale('burgershotingredients'))
-  EndTextCommandSetBlipName(burgeringredients)
-
+  RegisterNetEvent('esx:setJob')
+  AddEventHandler('esx:setJob', function(job)
+    ESX.PlayerData.job = job
+    if job.name == 'burgershot' then
+      local burgeringredients = AddBlipForCoord(Config.blips.burgeringredients.Pos.x, Config.blips.burgeringredients.Pos.y,Config.blips.burgeringredients.Pos.z)
+      SetBlipSprite(burgeringredients, Config.blips.burgeringredients.Sprite)
+      SetBlipDisplay(burgeringredients, Config.blips.burgeringredients.Display)
+      SetBlipScale(burgeringredients, Config.blips.burgeringredients.Scale)
+      SetBlipColour(burgeringredients, Config.blips.burgeringredients.Colour)
+      SetBlipAsShortRange(burgeringredients, true)
+      BeginTextCommandSetBlipName('STRING')
+      AddTextComponentSubstringPlayerName(locale('burgershotingredients'))
+      EndTextCommandSetBlipName(burgeringredients)
+      table.insert(blips, burgeringredients)
+     else
+      for i in pairs(blips) do
+        RemoveBlip(blips[i])
+        blips[i] = nil
+      end
+    end      
 end)
 
 --==========================================================================================================
